@@ -22,10 +22,10 @@ public class EditItemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_edit_item);
 
 
-        Bundle b = new Bundle();
-        b = getIntent().getExtras();
-         item_position  = b.getInt("ITEM_POSITION");
-        String item_title = b.getString("ITEM_TITLE") ;
+        Bundle bundle = new Bundle();
+        bundle = getIntent().getExtras();
+         item_position  = bundle.getInt("ITEM_POSITION");
+        String item_title = bundle.getString("ITEM_TITLE") ;
 
 
         edit_todo_editText = (EditText) findViewById(R.id.editText_todo) ;
